@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        /* 头像区域 */
+        .avatar-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+        .name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        .title {
+            font-size: 1.2rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        /* 个人信息区域 */
+        .info-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #2d3748;
+            border-left: 4px solid #4299e1;
+            padding-left: 1rem;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        /* 图片展示区域 */
+        .gallery-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .gallery-img:hover {
+            transform: translateY(-5px);
+        }
+        /* 底部区域 */
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #718096;
+            font-size: 1rem;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .name {
+                font-size: 1.8rem;
+            }
+            .info-section, .gallery-section {
+                padding: 1.5rem;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            .gallery-img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头像与基本信息 -->
+        <div class="avatar-section">
+            <img src="1755393195455.jpeg" alt="我的头像" class="avatar">
+            <h1 class="name">你的名字</h1>
+            <p class="title">你的职业/身份 | 兴趣爱好</p>
+        </div>
+
+        <!-- 个人介绍文字 -->
+        <div class="info-section">
+            <h2 class="section-title">关于我</h2>
+            <p class="intro-text">
+                大家好！我是🐾韵曜~🐾，一名热爱生活、积极向上的福瑞控。
+            </p>
+            <p class="intro-text">
+                在工作/学习中，始终秉持着认真负责、精益求精的态度对待每一件事。
+            </p>
+            <p class="intro-text">
+                生活里，我喜欢用镜头记录美好应，享受生活，期待在这里认识更多志同道合的朋友！
+            </p>
+        </div>
+
+        <!-- 图片展示 -->
+        <div class="gallery-section">
+            <h2 class="section-title">我的日常/作品</h2>
+            <div class="gallery">
+                <img src="1755454109603.jpeg" alt="生活记录1" class="gallery-img">
+                <img src="Image_1759114546238.png" alt="生活记录2" class="gallery-img">
+                <img src="Image_1758821809821.png" alt="生活记录3" class="gallery-img">
+                <img src="Image_1759114546238.png" alt="生活记录4" class="gallery-img">
+                <img src="Image_1759854720770.png" alt="生活记录5" class="gallery-img">
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>感谢你的访问 | 联系方式：你的邮箱/社交账号</p>
+        </div>
+    </div>
+</body>
+</html>
