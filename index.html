@@ -3,227 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>韵曜的自我介绍</title>
+    <title>🐾韵曜的福瑞小站🐾</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #ffd1dc, #a2d2ff);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .header {
-            background: linear-gradient(90deg, #ff9ec0, #9ec5ff);
-            padding: 30px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .paw-prints {
-            position: absolute;
-            top: 15px;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-around;
-            opacity: 0.7;
-        }
-        
-        .paw {
-            font-size: 24px;
-            animation: bounce 2s infinite;
-        }
-        
-        .paw:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-        
-        .paw:nth-child(3) {
-            animation-delay: 1s;
-        }
-        
-        .paw:nth-child(4) {
-            animation-delay: 1.5s;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .avatar-container {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 20px;
-            border: 5px solid white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .avatar {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .name {
-            font-size: 32px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-        }
-        
-        .tagline {
-            font-size: 18px;
-            color: white;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 30px;
-            text-align: center;
-        }
-        
-        .intro {
-            font-size: 20px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 30px;
-        }
-        
-        .highlight {
-            color: #ff6b9d;
-            font-weight: bold;
-        }
-        
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        
-        .gallery-item {
-            width: 120px;
-            height: 120px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-        
-        .gallery-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .footer {
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            color: #777;
-            font-size: 14px;
-        }
-        
-        .emoji {
-            font-size: 24px;
-            margin: 0 5px;
-        }
-        
-        @media (max-width: 600px) {
-            .header {
-                padding: 20px;
-            }
-            
-            .avatar-container {
-                width: 120px;
-                height: 120px;
-            }
-            
-            .name {
-                font-size: 26px;
-            }
-            
-            .intro {
-                font-size: 18px;
-            }
-            
-            .gallery-item {
-                width: 100px;
-                height: 100px;
-            }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Comic Sans MS', 'Segoe UI', sans-serif; }
+        body { background: #fdf2f8; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        /* 头像区域 */
+        .avatar-section { text-align: center; margin-bottom: 3rem; }
+        .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 6px solid #fff; box-shadow: 0 0 20px rgba(251, 146, 60, 0.2); margin-bottom: 1.5rem; }
+        .name { font-size: 2.5rem; font-weight: bold; color: #e11d48; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        .title { font-size: 1.3rem; color: #f97316; font-weight: 500; }
+        /* 简介区域 */
+        .info-section { background: #fff; border-radius: 20px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 3rem; text-align: center; }
+        .section-title { font-size: 1.8rem; color: #e11d48; margin-bottom: 1.5rem; }
+        .intro-text { font-size: 1.4rem; color: #f97316; font-weight: 500; }
+        /* 图片展示 */
+        .gallery-section { background: #fff; border-radius: 20px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .gallery-img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .gallery-img:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 8px 16px rgba(251, 146, 60, 0.3); }
+        /* 底部 */
+        .footer { text-align: center; margin-top: 3rem; color: #94a3b8; font-size: 1.1rem; }
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .name { font-size: 2rem; }
+            .info-section, .gallery-section { padding: 1.5rem; }
+            .gallery { grid-template-columns: 1fr; }
+            .gallery-img { height: 180px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="paw-prints">
-                <div class="paw">🐾</div>
-                <div class="paw">🐾</div>
-                <div class="paw">🐾</div>
-                <div class="paw">🐾</div>
-            </div>
-            <div class="avatar-container">
-                <img src="1755393195455.jpeg" alt="韵曜的头像" class="avatar">
-            </div>
-            <h1 class="name">韵曜</h1>
-            <p class="tagline">可爱的福瑞控 · 毛茸茸爱好者</p>
+        <!-- 头像 -->
+        <div class="avatar-section">
+            <img src="1755393195455.jpeg" alt="韵曜的头像" class="avatar">
+            <h1 class="name">韵曜🐾</h1>
+            <p class="title">可爱福瑞控 | 毛茸茸爱好者</p>
         </div>
-        
-        <div class="content">
-            <p class="intro">
-                你好呀！<span class="emoji">👋</span><br>
-                我是一个<span class="highlight">可爱的福瑞控</span><span class="emoji">🐾</span>韵曜~<span class="emoji">🐾</span><br>
-                喜欢一切毛茸茸、可爱的事物！<br>
-                动物朋友们的世界总是那么温暖而有趣呢~<br>
-                很高兴认识你！<span class="emoji">✨</span>
-            </p>
-            
+
+        <!-- 简介 -->
+        <div class="info-section">
+            <h2 class="section-title">关于我</h2>
+            <p class="intro-text">大家好！我是一个可爱的福瑞控🐾韵曜~🐾</p>
+        </div>
+
+        <!-- 图片展示 -->
+        <div class="gallery-section">
+            <h2 class="section-title">我的福瑞收藏/日常</h2>
             <div class="gallery">
-                <div class="gallery-item">
-                    <img src="1755454109603.jpeg" alt="韵曜的图片1" class="gallery-img">
-                </div>
-                <div class="gallery-item">
-                    <img src="Image_1758821809821.png" alt="韵曜的图片2" class="gallery-img">
-                </div>
-                <div class="gallery-item">
-                    <img src="Image_1759114546238.png" alt="韵曜的图片3" class="gallery-img">
-                </div>
-                <div class="gallery-item">
-                    <img src="Image_1759854720770.png" alt="韵曜的图片4" class="gallery-img">
-                </div>
+                <img src="1755454109603.jpeg" alt="收藏1" class="gallery-img">
+                <img src="Image_1759114546238.png" alt="收藏2" class="gallery-img">
+                <img src="Image_1758821809821.png" alt="收藏3" class="gallery-img">
+                <img src="Image_1759114546238.png" alt="收藏4" class="gallery-img">
+                <img src="Image_1759854720770.png" alt="收藏5" class="gallery-img">
             </div>
         </div>
-        
+
         <div class="footer">
-            <p>感谢访问我的小窝~ <span class="emoji">❤️</span></p>
+            <p>韵曜的福瑞小站 | 感谢访问🐾</p>
         </div>
     </div>
 </body>
